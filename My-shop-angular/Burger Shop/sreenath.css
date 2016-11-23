@@ -1,0 +1,53 @@
+* {
+	background-color: rgb(256,156,156);
+}
+.shopname h1{
+	height: 200px;
+	width:1025px;
+background-image: url(welcome.jpg);
+font-size: 78px;
+text-align: center;
+padding-top: 290px;
+color: #c0c5d0;
+}
+.shopname{
+	margin-left:20%;
+	margin-top: 0px;
+	background-position: center;
+}
+.nav h2 {
+	font-size: 36px;
+	text-align: center;
+	padding-right: 79px;
+}
+.description ul{
+	margin-left: 150px;
+}
+.burgers{
+	margin: 100px auto;
+    width: 90%;
+}
+.burgersimages{
+	float: left;
+
+}
+p {
+	font-size: 22px;
+}
+input{
+	background-color: white;
+	padding-left: 10px;
+	margin-left: 5px;
+     height:25px;
+     width:60px;
+
+}
+button{
+background-color: #999999;
+font-size: 26px;
+margin-left: 40px;
+
+}
+img{
+	background-color: rgb(256,156,156);
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html ng-app="myapp" >
+<head>
+    <meta charset="utf-8"/>
+	<title>SREENATH BURGER</title>
+	<link rel="stylesheet" type="text/css" href="sreenath.css">
+  <script src="angular.min.js"></script>
+
+  	<script src="angular.js"></script>
+
+
+</head>
+<!--   body of the code -------------------------------         !-->
+
+<body ng-controller="maincontroller as c1">
+<div class="shopname">
+<h1>SREENATH BURGER SHOP </h1>
+</div>
+<div class="nav">
+<h2>ITEMS</h2>
+</div>
+
+<div class="burgers">
+
+<div class="burgersimages">
+<img src="crispychicken.jpg" width="150px" style="float: left;">
+</div>
+<div class="description">
+	<ul>
+	<li>
+		<h3>Butter Milk Crispy Chicken </h3>
+	</li>
+	<li>
+		<h3 id="price1">$4.50</h3>
+	</li>
+	<li>
+
+		<h3 id="quantity" >Quantity :<input  type="number" value=0 ng-model="c1.name1"></h3>
+	</li>
+    <li>
+	<p>
+		Buttermilk crispy chicken made with 100% chicken breast filet and no added colors. Layered with crisp leaf lettuce, tasty tomato and mayonnaise, all on our delectable artisan roll.
+	</p>
+	</li>
+	</ul>
+</div>
+</br>
+
+<div class="burgersimages">
+<img src="latest.jpg" width="150px" style="float: left;">
+</div>
+<div class="description">
+	<ul>
+	<li>
+		<h3>Bacon Cheese </h3>
+	</li>
+	<li>
+		<h3 id="price2" value="5.50">$5.50</h3>
+	</li>
+	<li>
+		<h3 id="quantity" >Quantity :<input ng-model="c1.name2" id="num" type="number" value=0></h3>
+	</li>
+    <li>
+	<p>
+		Bacon Chese made with 100% bacon breast filet and no added colors. Layered with crisp leaf lettuce, tasty tomato and mayonnaise, all on our delectable artisan roll.
+	</p>
+	</li>
+	</ul>
+</div>
+</br>
+
+<div class="burgersimages">
+<img src="bigbonza.jpg" width="150px" style="float: left;">
+</div>
+<div class="description">
+	<ul>
+	<li>
+		<h3>Big Bonza Crispy Chicken </h3>
+	</li>
+	<li>
+		<h3 id="price3" value="6.50">$6.50</h3>
+	</li>
+	<li>
+		<h3 id="quantity" >Quantity :<input ng-model="c1.name3" id="num" type="number" value=0></h3>
+	</li>
+    <li>
+	<p>
+		Big bonza chicken made with 100% chicken  and beaf breast filet and no added colors. Layered with crisp leaf lettuce, tasty tomato and mayonnaise, all on our delectable artisan roll.
+	</p>
+	</li>
+	</ul>
+</div>
+
+</br>
+<div class="burgersimages">
+<img src="double dhamka.jpg" width="150px" style="float: left;">
+</div>
+<div class="description">
+	<ul>
+	<li>
+		<h3> Double Dhamaka Burger </h3>
+	</li>
+	<li>
+		<h3 id="price4" value="7.50" >$7.50</h3>
+	</li>
+	<li>
+	<h3 id="quantity" >Quantity :<input ng-model="c1.name4" id="num" type="number" value=0></h3>
+	</li>
+    <li>
+	<p>
+		Double Dhamaka Burger made with 100% chicken breast and all other breas filet and no added colors. Layered with crisp leaf lettuce, tasty tomato and mayonnaise, all on our delectable artisan roll.
+	</p>
+	</li>
+	</ul>
+</div>
+
+</br>
+<div class="burgersimages">
+<img src="bbq.jpg" width="150px"   >
+</div>
+<div class="description"  >
+	<ul>
+	<li>
+		<h3> BBQ  </h3>
+	</li>
+	<li>
+		<h3 id="price5" value="4.50">$4.50</h3>
+	</li>
+	<li>
+		<h3 id="quantity" >Quantity :<input ng-model="c1.name5"  type="number"  value=0 ></h3>
+	</li>
+    <li>
+	<p>
+		BBQ made with 100% turkey breast filet and no added colors. Layered with crisp leaf lettuce, tasty tomato and mayonnaise, all on our delectable artisan roll and it is very very hot burger.
+	</p>
+	</li>
+	</ul>
+</div>
+</br>
+<div>
+<button  type="button" class="finalprice"  ng-click="c1.clicksum()">Total Price </button>
+<p style="margin-left:80px;">{{c1.finalprice}}</p>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
